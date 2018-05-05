@@ -10,7 +10,7 @@
 				</div>
 
 				<div class="panel-body">
-					{!! Form::open(['route' => ['tags.update', $tags->id], 'method' => 'PUT']) !!}
+					{!! Form::model($tag, ['route' => ['tags.update', $tag->id], 'method' => 'PUT']) !!}
 
 						@include('admin.tags.partials.form')
 
